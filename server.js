@@ -16,6 +16,9 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+const routes = require("./controllers/controller.js");
+
+app.use(routes);
 
 app.listen(PORT, function() {
     // Log (server-side) when our server has started
