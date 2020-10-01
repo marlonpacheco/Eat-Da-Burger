@@ -1,10 +1,19 @@
-var express = require("express");
+const express = require("express");
 
-var router = express.Router();
+const router = express.Router();
 
+const burger = require("../models/burger.js")
 
 //Base Route
-router.get('/', function(req,res){
-    res.render(index)
+router.get("/", function (req, res) {
+  burger.all(function (data) {
+    let hbsObject = {
+      burgers: data
+    }
+    console.log(hbsObject);
+    res.render("index", hbsObject)
   })
-  
+})
+
+
+module.exports = router;

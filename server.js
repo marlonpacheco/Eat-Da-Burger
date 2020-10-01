@@ -4,10 +4,13 @@ require('dotenv').config();
 
 const app = express();
 
+
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
 const PORT = process.env.PORT || 8080;
 
+
+app.use(express.static("public"));
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
