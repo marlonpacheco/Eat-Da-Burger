@@ -2,7 +2,7 @@
 $(function () {
     $(".munchBtn").on("click", function () {
         let id = $(this).data("id");
-        let consumed = $(this).data("data-munched");
+        let consumed = $(this).data("munched");
 
         let burgerStatus = {
             munched: consumed
