@@ -17,4 +17,24 @@ $(function () {
             }
         )
     })
+    $(".create-form").on("submit", function(event) {
+        event.preventDefault();
+ 
+     let newBurger = {
+       name: $("#burg").val().trim(),
+     };
+ 
+     // Send the POST request.
+     $.ajax("/api/burgers", {
+       type: "POST",
+       data: newBurger
+     }).then(
+       function() {
+         console.log("added burger");
+         // Reload the page to get the updated list
+         location.reload();
+       }
+     );
+   });
 })
+
