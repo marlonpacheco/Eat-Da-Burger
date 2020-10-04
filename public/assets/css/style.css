@@ -17,3 +17,13 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+h1 {
+  text-align: center;
+}
+
+.col-6 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
