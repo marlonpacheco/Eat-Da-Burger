@@ -14,10 +14,10 @@ Munch-Da-Burger! is a restaurant app that lets users input the names of burgers 
 HTML, CSS, Javascript, Node, MySQL, Handlebars.
 ```
 
-### Links
-```
+### Link
 Deployed App: 
-```
+https://munch-da-burger-by-mp.herokuapp.com/ 
+
 
 ### Screen Shot
 ![](/ScreenShot.png)
